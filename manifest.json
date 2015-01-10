@@ -1,0 +1,14 @@
+{
+	"manifest_version":2,
+	"name": "fb",
+	"description": "Hide your facebook feed when you need to focus! Turns facebook into messenger",
+	"version": "1.0",
+	"author":"Rohan Pandit",
+	"permissions":["storage"],
+	"content_scripts": [
+		{
+			"matches": ["https://www.facebook.com/*"],
+			"js": ["script.js"]
+		}
+	]
+}
